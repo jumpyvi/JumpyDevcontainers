@@ -1,0 +1,20 @@
+{
+    "name": "Dotnet DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "ubuntu"
+        }
+    },
+    "runArgs": ["-u", "root"],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    
+    "remoteUser": "ubuntu"
+    //"postCreateCommand": "if [ -f package.json ]; then npm install; fi && dotnet restore"
+}

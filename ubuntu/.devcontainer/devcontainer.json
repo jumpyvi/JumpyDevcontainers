@@ -1,0 +1,19 @@
+{
+    "name": "Ubuntu DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "ubuntu"
+        }
+    },
+    "runArgs": ["-u", "root"],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    
+    "remoteUser": "ubuntu"
+}
