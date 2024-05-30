@@ -1,19 +1,12 @@
 {
-    "name": "Ubuntu DevContainer",
+    "name": "JetBrains Ubuntu DevContainer",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
             "USERNAME": "ubuntu"
         }
     },
-    "runArgs": ["-u", "root"],
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "terminal.integrated.shell.linux": "/bin/bash"
-            }
-        }
-    },
-    
+    "runArgs": ["-u", "root", "--ulimit", "nofile=1048576"],
     "remoteUser": "ubuntu"
 }
+
