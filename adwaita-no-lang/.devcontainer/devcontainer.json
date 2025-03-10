@@ -1,0 +1,27 @@
+{
+	"name": "Adwaita",
+	"remoteUser": "adw",
+	"dockerFile": "./Dockerfile",
+	"runArgs": [
+		"--net=host",
+		"--volume=/var/run/docker.sock:/var/run/docker.sock",
+		"--device=/dev/dri"
+	],
+
+	// --- Mounts for VIM config file --- //
+	
+	//"mounts": [
+	//	"source=${localEnv:HOME}${localEnv:USERPROFILE}/.vimrc,target=/home/adw/.vimrc,type=bind,consistency=cached"
+	//],
+
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mesonbuild.mesonbuild",
+				"vivaxy.vscode-conventional-commits",
+				"bierner.markdown-preview-github-styles",
+			]
+		}
+	}
+}
