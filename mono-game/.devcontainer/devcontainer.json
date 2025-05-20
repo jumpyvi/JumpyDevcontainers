@@ -1,0 +1,23 @@
+{
+	"name": "MonoGame",
+	"dockerFile": "Dockerfile",
+	"remoteUser": "mono",
+	"runArgs": [
+		"--net=host",
+		"--device=/dev/dri",
+		"--device=/dev/kfd"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Gruntfuggly.todo-tree",
+				"vivaxy.vscode-conventional-commits",
+				"bierner.markdown-preview-github-styles",
+				"mkhl.mkhl-just",
+				"nefrob.vscode-just-syntax",
+				"ms-dotnettools.vscodeintellicode-csharp",
+				"ms-dotnettools.csharp"
+			]
+		}
+	}
+}

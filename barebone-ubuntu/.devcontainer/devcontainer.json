@@ -1,12 +1,11 @@
 {
-    "name": "JetBrains Ubuntu DevContainer",
+    "name": "Barebone Ubuntu DevContainer",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
             "USERNAME": "ubuntu"
         }
     },
-    "runArgs": ["-u", "root", "--ulimit", "nofile=1048576"],
     "remoteUser": "ubuntu"
 }
 
