@@ -1,0 +1,20 @@
+{
+	"name": "Racket DevContainer",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"remoteUser": "racket",
+	"runArgs": [
+		"-e",
+		"DISPLAY",
+		"-v",
+		"/tmp/.X11-unix:/tmp/.X11-unix"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"evzen-wybitul.magic-racket"
+			]
+		}
+	}
+}
